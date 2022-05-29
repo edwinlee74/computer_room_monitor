@@ -1,0 +1,146 @@
+body{
+  background:#000000;
+  margin: 0;
+  padding: 0;
+}
+
+#left_div {
+  width:69%;
+  height: 70%;
+  background-color: #000000;
+  line-height:50px;
+  padding:20px;
+  border:2px green solid;
+  margin-right:10px;
+  float:left;
+  margin: 0;
+}
+
+#right_div {
+  width:25%;
+  height: 70%;
+  background-color: #000000;
+  line-height:50px;
+  padding:20px;
+  border:2px green solid;
+  float:right;
+}
+h3 {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #16e7cb;
+}
+
+.server_rack {
+  width:30%;
+  height: 70%;
+  line-height:50px;
+  padding:20px;
+  border:2px green solid;
+  margin-right:10px;
+  float:left;
+}
+
+.rack_level {
+  position: relative;
+  width:100%;
+  background: rgb(0, 0, 0); 
+  border:2px rgb(245, 238, 38) solid;
+  margin: auto;
+}
+
+.rack_box {
+  display: block;
+  margin: auto;
+}
+
+.th_history_display {
+  width:60%;
+  height: 70%;
+  line-height:50px;
+  padding:20px;
+  border:2px green solid;
+  float:right;
+}
+
+.th_label {
+  color: rgb(109, 75, 75);
+  padding: 8px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: xx-large;
+}
+
+.th_digit {
+  color: rgb(76, 12, 224);
+  padding: 8px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: xx-large;
+}
+
+#temp_display {
+  width:100%;
+  background: rgb(84, 173, 126); 
+  line-height:220px;
+}
+
+.th_history_view {
+  width:100%;
+  background: rgb(254, 254, 254); 
+  line-height:220px;
+}
+
+#fan_level {
+  position: absolute;
+  left: -25px;
+  top: -25px;
+  border: green solid;
+}
+
+#events {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  position: fixed;
+  padding: 10px 10px 10px 10px;
+  bottom: 0;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  /* Height of the footer*/ 
+  height: 240px;
+  background: white;
+  border: green solid;
+}
+
+#message {
+  resize: none;
+  overflow: hidden;
+}
+
+#dl380 {
+  width: 400px;
+  height: 100px;
+}
+
+#qnap {
+  width: 150px;
+  height: 100px;
+}
+
+#fan {
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  align-content: center;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 0s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

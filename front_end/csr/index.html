@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Computer Room Monitor</title>
+  </head>
+  <body>
+    
+    <br />
+      <div id="left_div">
+         <div class="server_rack">
+          <h3>Server Rack</h3>
+          <div class="rack_level">
+             <img id="fan" class="rack_box" src="src/img/fan-blades-png.png">
+          </div><br />
+          <div class="rack_level">
+            <img id="dl380" class="rack_box" src="src/img/dl380.png">
+          </div><br />
+          <div class="rack_level">
+            <img id="qnap" class="rack_box" src="src/img/qnap_nas.png">
+          </div>
+         </div>
+         <div class="th_history_display">
+          <h3>The History of Temperature and Humidity</h3>
+          <div class="th_history_view"><canvas id="tChart" width=300 height=100></canvas></div><br />
+          <div class="th_history_view"><canvas id="hChart" width=300 height=100></canvas></div>
+         </div>
+      </div>
+      <div id="right_div">
+        <canvas id="canvas" width="500"  height="500" ></canvas>
+          <div id="temp_display">
+            <label class="th_label">溫度: </label><label id="t_label" class="th_digit">&#x2103;</label>
+            <label class="th_label">濕度: </label><label id="h_label" class="th_digit"></label>
+          </div>
+      </div>
+      
+     
+    <footer id="events">
+      <h1>Something happening.</h1>
+      <textarea id="message" name="message" rows="7" cols="170" readonly></textarea>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
